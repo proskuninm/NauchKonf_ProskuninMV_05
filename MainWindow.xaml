@@ -1,0 +1,33 @@
+﻿<Window x:Class="NauchKonf_ProskuninMV_05.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NauchKonf_ProskuninMV_05"
+        mc:Ignorable="d"
+        Title="Научная конференция" Height="450" Width="800" MinHeight="800" MinWidth="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="Coral" Grid.Row="0">
+            <TextBlock Text="Научная конференция" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
+        </Grid>
+
+        <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Background="Cyan">
+                <TextBlock Text="Авторизация" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Логин" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+                <TextBox Width="200" Height="30" BorderBrush="Black"/>
+                <TextBlock Text="Пароль" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+                <PasswordBox Width="200" Height="30" BorderBrush="Black"/>
+                <WrapPanel>
+                    <Button x:Name="btnVoiti" Content="Войти" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Coral" Width="100" Height="30" Margin="0 10 0 0"/>
+                    
+                </WrapPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
