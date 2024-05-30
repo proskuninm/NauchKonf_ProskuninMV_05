@@ -13,20 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NauchKonf_ProskuninMV_05
+namespace NauchKonf_ProskuninMV_05.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для DobSotrPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class DobSotrPage : Page
     {
-        public MainWindow()
+        public DobSotrPage()
         {
             InitializeComponent();
-            Manager.MainFrame = MainFrame;
-            Manager.MainFrame.Navigate(new Pages.AuthPage());
         }
-
-
     }
 }

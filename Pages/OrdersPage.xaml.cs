@@ -10,23 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NauchKonf_ProskuninMV_05
+namespace NauchKonf_ProskuninMV_05.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для OrdersPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class OrdersPage : Window
     {
-        public MainWindow()
+        public OrdersPage()
         {
             InitializeComponent();
-            Manager.MainFrame = MainFrame;
-            Manager.MainFrame.Navigate(new Pages.AuthPage());
         }
-
-
     }
 }

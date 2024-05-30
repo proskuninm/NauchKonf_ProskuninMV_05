@@ -16,18 +16,6 @@
             <TextBlock Text="Научная конференция" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40"/>
         </Grid>
 
-        <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <StackPanel Background="Cyan">
-                <TextBlock Text="Авторизация" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="Логин" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
-                <TextBox Width="200" Height="30" BorderBrush="Black"/>
-                <TextBlock Text="Пароль" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
-                <PasswordBox Width="200" Height="30" BorderBrush="Black"/>
-                <WrapPanel>
-                    <Button x:Name="btnVoiti" Content="Войти" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Coral" Width="100" Height="30" Margin="0 10 0 0"/>
-                    
-                </WrapPanel>
-            </StackPanel>
-        </Grid>
+        <Frame Grid.Row="1" x:Name="MainFrame" NavigationUIVisibility="Hidden" />
     </Grid>
 </Window>

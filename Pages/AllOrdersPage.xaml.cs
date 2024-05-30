@@ -13,20 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NauchKonf_ProskuninMV_05
+namespace NauchKonf_ProskuninMV_05.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для AllOrdersPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AllOrdersPage : Page
     {
-        public MainWindow()
+        public AllOrdersPage()
         {
             InitializeComponent();
-            Manager.MainFrame = MainFrame;
-            Manager.MainFrame.Navigate(new Pages.AuthPage());
         }
 
-
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

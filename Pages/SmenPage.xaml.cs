@@ -13,20 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace NauchKonf_ProskuninMV_05
+namespace NauchKonf_ProskuninMV_05.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для SmenPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SmenPage : Page
     {
-        public MainWindow()
+        public SmenPage()
         {
             InitializeComponent();
-            Manager.MainFrame = MainFrame;
-            Manager.MainFrame.Navigate(new Pages.AuthPage());
         }
-
-
     }
 }
